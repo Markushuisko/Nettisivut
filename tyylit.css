@@ -1,0 +1,103 @@
+header, footer {
+
+  color: rgba(131, 243, 229, 0.77);
+  text-align: center;
+  padding: 20px;
+  clear: both;
+
+}
+header {
+    background-color: rgba(0, 4, 14, 0.86);
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.81);
+  padding: 10px;
+
+}
+h1 {
+  font-size: 24pt;
+}
+body {
+  background-image: url(markusbg.jpeg);
+  font-family: 'Roboto Slab', serif;
+}
+ .container {
+  background-color: white;
+  opacity: ;
+  padding: 15px;
+  -webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+}
+/*nav {
+  float: left;
+  margin-right: 150px;
+  background-color: #b3d1ff;
+  padding: 15px;
+  clear: right;
+  font-family: "Times New Roman", Times, serif;
+  width: 25%;
+  overflow: auto;
+  height: 100%;
+} */
+
+li a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  padding: 2.3px 13px;
+}
+
+li a.active {
+  background-color: #21b627;
+  color: white;
+}
+li a:hover:not(.active) {
+    background-color: #0e305a;
+    color: white;
+}/*
+nav ul {
+  list-style-type: circle;
+  padding-left: 10px;
+}
+#Faktaa {
+  width: 30%;
+  padding: 46px;
+  float: right;
+  clear: right;
+  background-color: #b3d1ff;
+  margin-left: 50px;
+  list-style-type: circle;
+      font-family: "Times New Roman", Times, serif;
+
+}
+article {
+  float: left;
+  clear: right;
+  text-align: center;
+}
+*/
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 40px;
+}
+
+h3 {
+  margin-left: 40px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  background-color: rgb(198, 207, 247);
+  opacity:;
+}
