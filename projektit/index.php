@@ -1,4 +1,7 @@
-<?php echo "projektit";?>
+<?php
+session_start();
+var_dump($_SESSION);
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,7 +21,7 @@
           <?php foreach($xml->projektit->projekti as $projekti): ?>
           <li>
             <a href="<?php echo $projekti->linkki; ?>" target="_blank"><?php echo $projekti->nimi; ?></a>
-            <a href="kirjautuminen.php" class="button button2">Muokkaa</a>
+            <a href="projektinmuokkaus.php?id=<?php echo $i;?>" class="button button2">Muokkaa</a>
             <a href="projektintiedot.php?id=<?php echo $i++;?>" class="button">Tiedot</a>
           </li>
           <?php endforeach; ?>

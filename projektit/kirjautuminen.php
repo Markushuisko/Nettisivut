@@ -1,10 +1,13 @@
-<<?php
+<?php
+    session_start();
+    var_dump($_SESSION);
+    echo $_SESSION['projekti_id'];
     if (isset($_POST['submit'])) {
-      session_start();
+      // Kirjautumisen tsekkaus tähän väliin sitten kun ajankohtaista
 
       $_SESSION['name'] = htmlentities($_POST['name']);
 
-      header('Location: kirjautuminensivu2.php');
+      header('Location: projektinmuokkaus.php');
     }
  ?>
 

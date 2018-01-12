@@ -1,3 +1,23 @@
+<?php
+    session_start();
+
+    // Tarkastetaan onko kirjauduttu
+    if (!isset($_SESSION['name'])) {
+      header('Location: kirjautuminen.php');
+    }
+
+    // Tarkastetaan GET-parametri id
+    if (isset($_GET['id'])) {
+      $_SESSION['projekti_id'] = intval($_GET['id']);
+      $i = intval($_GET['id']);
+    }
+
+    // Tarkastetaan SESSIO-muuttuja projekti_id
+    else if (isset($_SESSION['projekti_id'])) {
+      $i = intval($_SESSION['projekti_id']);
+    }
+
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,7 +35,6 @@
 <div class="style">
 
 <?php $xml = simplexml_load_file('projektit.xml'); ?>
-<?php $i = intval($_GET['id']); ?>
 
 <label><b>Nimi:</b></label>
 <input type="text" placeholder="" name="nimi" value="<?php echo $xml->projektit->projekti[$i]->nimi; ?>">
