@@ -17,6 +17,7 @@
       $i = intval($_SESSION['projekti_id']);
     }
 
+
  ?>
 <!DOCTYPE html>
 <html>
@@ -52,6 +53,7 @@
 <input type="button" class="button" value="Poista projekti">
 <input type="submit" class="button" value="Tallenna">
 
+<a href="kirjaudu-ulos.php">Kirjaudu ulos</a>
 
 </div>
 </div>
