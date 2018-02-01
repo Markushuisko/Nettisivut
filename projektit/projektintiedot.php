@@ -1,3 +1,7 @@
+<?php
+session_start();
+var_dump($_SESSION);
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,16 +22,19 @@
 <?php $i = intval($_GET['id']); ?>
 
 <label><b>Nimi:</b></label>
-<input type="text" placeholder="" name="nimi" value="<?php echo $xml->projektit->projekti[$i]->nimi; ?>">
+<p><?php echo $xml->projektit->projekti[$i]->nimi; ?></p>
 
 <label><b>Päivämäärä:</b></label>
-<input type="text" placeholder="" name="päivämäärä" value="<?php echo $xml->projektit->projekti[$i]->päivämäärä; ?>">
+<p><?php echo $xml->projektit->projekti[$i]->päivämäärä; ?></p>
 
 <label><b>Projektin kuvaus:</b></label>
-<textarea name="desc"><?php echo $xml->projektit->projekti[$i]->kuvaus; ?></textarea>
+<p><?php echo $xml->projektit->projekti[$i]->kuvaus; ?></p>
 
 <label><b>Mitä opin?</b></label>
-<textarea name="desc"><?php echo $xml->projektit->projekti[$i]->oppiminen; ?></textarea>
+<p><?php echo $xml->projektit->projekti[$i]->oppiminen; ?></p>
+
+<label><b>Linkki Projektiin</b></label>
+<p><a class="btn" href=" <?php echo $xml->projektit->projekti[$i]->linkki;?>"> <?php echo $xml->projektit->projekti[$i]->nimi; ?></a></p>
 
 <a href="./">Takaisin</a>
 
@@ -84,6 +91,11 @@
     font-size: 20px;
     font-family: Verdana, Geneva, sans-serif;
     text-decoration: none;
+  }
+
+  a.btn {
+    font-size: 15px;
+    color: rgb(41, 37, 37);
   }
 
   </style>

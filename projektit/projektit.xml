@@ -6,28 +6,31 @@
       <kuvaus>Perinteinen matopeli</kuvaus>
       <päivämäärä>8.11.2017</päivämäärä>
       <oppiminen>Canvas-pelin idean ja javascripitin perusteita</oppiminen>
-      <linkki>http://paja.esedu.fi/data16/markus.huiskonen/projektit/kaarmepeli/</linkki>
+      <linkki>http://paja.esedu.fi/data16/markus.huiskonen/projektit/kaarmepeli</linkki>
     </projekti>
     <projekti>
       <nimi>Bookmarker</nimi>
       <kuvaus>Voi lisätä lempisivustot, teemapäivän tuotos</kuvaus>
       <päivämäärä>8.11.2017</päivämäärä>
-      <oppiminen></oppiminen>
+      <oppiminen/>
       <linkki>http://paja.esedu.fi/data16/markus.huiskonen/projektit/bookmarker/</linkki>
     </projekti>
     <projekti>
       <nimi>Html.css-teema</nimi>
       <kuvaus>Nettisivu, teemapäivän tuotos</kuvaus>
       <päivämäärä>8.11.2017</päivämäärä>
-      <oppiminen></oppiminen>
+      <oppiminen/>
       <linkki>http://paja.esedu.fi/data16/markus.huiskonen/projektit/html.css-teema/</linkki>
     </projekti>
   </projektit>
-    <muokkaus>
-      <kirjautuminen>
-        <otsikko>Kirjautuminen vaaditaan</otsikko>
-        <nimi>Markus</nimi>
-        <salasana>htyhth</salasana>
-      </kirjautuminen>
-    </muokkaus>
+  <muokkaus>
+    <kirjautuminen>
+      <otsikko>Kirjautuminen vaaditaan</otsikko>
+      <nimi>Markus</nimi>
+      <salasana>htyhth</salasana>
+    </kirjautuminen>
+  </muokkaus>
+  <projekti>
+    <nimi>Kissaprojekti</nimi>
+  </projekti>
 </projektitietovarasto>

@@ -1,13 +1,13 @@
 <?php
     session_start();
     var_dump($_SESSION);
-    echo $_SESSION['projekti_id'];
+
     if (isset($_POST['submit'])) {
       // Kirjautumisen tsekkaus tähän väliin sitten kun ajankohtaista
 
       $_SESSION['name'] = htmlentities($_POST['name']);
 
-      header('Location: projektinmuokkaus.php');
+      header('Location: index.php');
     }
  ?>
 
@@ -37,7 +37,7 @@
   <label><b>Salasana:</b></label>
   <input type="text" placeholder="" name="nimi">
 
-  <input type="submit" name="submit" value="Submit">
+  <input type="submit" name="submit" value="Kirjaudu">
 
 </form>
 

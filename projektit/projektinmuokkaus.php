@@ -49,11 +49,14 @@
 <label><b>Mitä opin?</b></label>
 <textarea name="desc"><?php echo $xml->projektit->projekti[$i]->oppiminen; ?></textarea>
 
+<label><b>Linkki</b></label>
+<input type="text" placeholder="" name="linkki" value="<?php echo $xml->projektit->projekti[$i]->linkki; ?>">
+
 <a href="./">Takaisin</a>
 <input type="button" class="button" value="Poista projekti">
 <input type="submit" class="button" value="Tallenna">
 
-<a href="kirjaudu-ulos.php">Kirjaudu ulos</a>
+<a class="btn" href="kirjaudu-ulos.php">Kirjaudu ulos</a>
 
 </div>
 </div>
@@ -68,7 +71,7 @@
 
   input[type="text"] {
     width: 100%;
-    padding: 5px 15px;
+    padding: 5px;
     box-sizing: border-box;
     margin: 8px 0;
     display: inline-block;
@@ -105,9 +108,27 @@
   }
 
   a {
-    font-size: 20px;
+    font-size: 15px;
     font-family: Verdana, Geneva, sans-serif;
     text-decoration: none;
+    margin: 5px 10px;
+    padding: 5px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    background-color: rgb(113, 113, 113);
+    color: rgb(255, 255, 255);
+  }
+
+  a.btn {
+    font-size: 15px;
+    font-family: Verdana, Geneva, sans-serif;
+    text-decoration: none;
+    margin: 5px 10px;
+    padding: 5px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(113, 113, 113);
   }
 
   .button {
@@ -117,7 +138,7 @@
     border: 1.5px solid rgb(66, 66, 66);
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   </style>

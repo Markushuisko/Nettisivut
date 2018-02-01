@@ -5,6 +5,13 @@ var_dump($_SESSION);
 <!DOCTYPE html>
 <html>
   <head>
+
+    <div class="header">
+      <p><a href="kirjautuminen.php" class="login">Kirjaudu sisään</a><p>
+        <hr>
+      <p><a href="kirjaudu-ulos.php" class="logout">Kirjaudu ulos</a><p>
+    </div>
+
       <link rel="stylesheet" type="text/css" href="tyylit.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <meta charset="utf-8">
@@ -26,15 +33,20 @@ var_dump($_SESSION);
           </li>
           <?php endforeach; ?>
 
-
           <hr>
-          <button class="button button3">Lisää uusi projekti</button>
+          <a href="uusiprojekti.php" class="button button3">Lisää uusi projekti</a>
+
         </nav>
     </div>
 
 
 
     <style>
+
+      p {
+        font-size: 20px;
+      }
+
       h1 {
         text-align: center;
         font-family: 'Roboto Slab', serif;
@@ -52,7 +64,6 @@ var_dump($_SESSION);
 
       li {
         padding: 5px 5px;
-
       }
 
       .button {
@@ -65,6 +76,7 @@ var_dump($_SESSION);
         font-size: 15px;
         float: right;
         margin-right: 5px;
+        padding: 2px;
       }
 
       .button2 {
@@ -78,7 +90,6 @@ var_dump($_SESSION);
         padding: 10px 30px;
         width: 80%;
         border-radius: 20px;
-        float: left;
         margin-left: 37px;
         margin-top: 8px;
         font-size: 20px;
@@ -86,7 +97,30 @@ var_dump($_SESSION);
 
       a {
         text-decoration: none;
+      }
 
+      div.header {
+        margin-left: 100px;
+        width: 10%;
+        border: 3px solid rgb(66, 66, 66);
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .login {
+        background-color: rgb(95, 133, 5);
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        padding: 10 10 10 10;
+        border-radius: 5px;
+      }
+
+      .logout {
+        background-color: rgb(125, 35, 35);
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        padding: 10 10 10 10;
+        border-radius: 5px;
       }
 
     </style>
