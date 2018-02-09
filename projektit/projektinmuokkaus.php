@@ -53,10 +53,9 @@
 <input type="text" placeholder="" name="linkki" value="<?php echo $xml->projektit->projekti[$i]->linkki; ?>">
 
 <a href="./">Takaisin</a>
-<input type="button" class="button" value="Poista projekti">
+<a class="button btn" href="poistaprojekti.php">Poista projekti</a>
 <input type="submit" class="button" value="Tallenna">
 
-<a class="btn" href="kirjaudu-ulos.php">Kirjaudu ulos</a>
 
 </div>
 </div>
@@ -93,7 +92,6 @@
     background-color: #a7ebf2;
     opacity: 0.85;
     padding: 10px 20px 10px 20px;
-    font-family: 'Roboto Slab', serif;
   }
 
   form textarea {
@@ -107,38 +105,29 @@
     background-color: white;
   }
 
+
   a {
-    font-size: 15px;
-    font-family: Verdana, Geneva, sans-serif;
     text-decoration: none;
-    margin: 5px 10px;
-    padding: 5px;
-    border: 1.5px solid black;
-    border-radius: 5px;
-    background-color: rgb(113, 113, 113);
-    color: rgb(255, 255, 255);
+    font-size: 20px;
+    color: black;
+    font-family: 'Roboto Slab', serif;
   }
 
   a.btn {
-    font-size: 15px;
-    font-family: Verdana, Geneva, sans-serif;
-    text-decoration: none;
-    margin: 5px 10px;
-    padding: 5px;
-    border: 1.5px solid black;
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(113, 113, 113);
+    background-color: rgb(255, 45, 45);
   }
 
   .button {
     float: right;
     padding: 5px 5px 5px 5px;
     font-size: 15px;
-    border: 1.5px solid rgb(66, 66, 66);
+    border: 1.5px solid black;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 5px;
+    margin: 0px 5px;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(30, 149, 0);
+    color: white;
   }
 
   </style>

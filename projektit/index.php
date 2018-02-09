@@ -33,7 +33,7 @@ session_start();
         </li>
         <?php endforeach; ?>
 
-        <hr>
+
         <a href="uusiprojekti.php" class="button btn_big green">Lisää uusi projekti</a>
 
       </nav>
@@ -62,8 +62,7 @@ session_start();
         float: right;
         text-align: left;
         margin: 0px 0px 0px 50px;
-        width: 60%;
-
+        width: 40%;
         border: 3px solid #73AD21;
         padding: 5px;
         font-size: 20px;
@@ -148,9 +147,7 @@ session_start();
 
       /*Use a media query to add a breakpoint at 800px:*/
       @media (max-width:800px) {
-        body {
-          background-color: red;
-        }
+
 
         .container{
 
