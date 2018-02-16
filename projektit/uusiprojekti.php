@@ -36,7 +36,7 @@
     <label><b>Linkki Projektiin</b></label>
     <input type="text" placeholder="" name="linkki">
 
-    <input type="submit"  value="Tallenna">
+    <input type="submit" class="button" value="Tallenna">
     <a href="./">Takaisin</a>
 
   </div>
@@ -88,14 +88,29 @@
     }
 
     a {
-      font-size: 20px;
-      font-family: Verdana, Geneva, sans-serif;
-      text-decoration: none;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        font-family: 'Roboto Slab', serif;
+
     }
 
     a.btn {
       font-size: 15px;
       color: rgb(41, 37, 37);
+    }
+
+    .button {
+      float: right;
+      padding: 5px 5px 5px 5px;
+      font-size: 15px;
+      border: 1.5px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0px 5px;
+      font-family: 'Roboto Slab', serif;
+      background-color: rgb(30, 149, 0);
+      color: white;
     }
 
     </style>

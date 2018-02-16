@@ -33,7 +33,7 @@ session_start();
         </li>
         <?php endforeach; ?>
 
-
+        <hr>
         <a href="uusiprojekti.php" class="button btn_big green">Lisää uusi projekti</a>
 
       </nav>

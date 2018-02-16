@@ -29,13 +29,16 @@
   <body>
 
 <div class="container">
-<form name="lomake">
 
-
+<form action="tallennaprojekti.php" method="get">
 
 <div class="style">
 
 <?php $xml = simplexml_load_file('projektit.xml'); ?>
+
+<label><b>Id:</b></label>
+<input type="text" placeholder="" name="id" value="<?php echo $i; ?>">
+
 
 <label><b>Nimi:</b></label>
 <input type="text" placeholder="" name="nimi" value="<?php echo $xml->projektit->projekti[$i]->nimi; ?>">
@@ -44,23 +47,22 @@
 <input type="text" placeholder="" name="päivämäärä" value="<?php echo $xml->projektit->projekti[$i]->päivämäärä; ?>">
 
 <label><b>Projektin kuvaus:</b></label>
-<textarea name="desc"><?php echo $xml->projektit->projekti[$i]->kuvaus; ?></textarea>
+<textarea name="kuvaus"><?php echo $xml->projektit->projekti[$i]->kuvaus; ?></textarea>
 
 <label><b>Mitä opin?</b></label>
-<textarea name="desc"><?php echo $xml->projektit->projekti[$i]->oppiminen; ?></textarea>
+<textarea name="oppiminen"><?php echo $xml->projektit->projekti[$i]->oppiminen; ?></textarea>
 
 <label><b>Linkki</b></label>
 <input type="text" placeholder="" name="linkki" value="<?php echo $xml->projektit->projekti[$i]->linkki; ?>">
 
 <a href="./">Takaisin</a>
-<a class="button btn" href="poistaprojekti.php">Poista projekti</a>
+<a class="button btn" href="poistaprojekti.php?id=<?php echo $i;?>">Poista projekti</a>
 <input type="submit" class="button" value="Tallenna">
 
 
 </div>
 </div>
 </form>
-
 
   <style>
 
@@ -81,7 +83,6 @@
 
   .container {
     padding: 20px 600px;
-
   }
 
   b {
