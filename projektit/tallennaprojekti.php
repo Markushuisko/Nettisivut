@@ -13,7 +13,7 @@ if (empty($_GET)) {
 $nimi = $_GET['nimi'];
 $päivämäärä = $_GET['päivämäärä'];
 $kuvaus = $_GET['kuvaus'];
-$mitäopin = $_GET['oppiminen'];
+$oppiminen = $_GET['oppiminen'];
 $linkki = $_GET['linkki'];
 
 if (empty($nimi)) $errors[] = 'Et antanut nimeä';
@@ -46,7 +46,7 @@ if (!empty($errors)) {
     $uusiProjekti = $xml->projektit->addChild('projekti');
     $uusiProjekti->addChild('nimi',$nimi);
     $uusiProjekti->addChild('päivämäärä',$päivämäärä);
-    $uusiProjekti->addChild('oppiminen',$mitäopin);
+    $uusiProjekti->addChild('oppiminen',$oppiminen);
     $uusiProjekti->addChild('kuvaus',$kuvaus);
     $uusiProjekti->addChild('linkki',$linkki);
 

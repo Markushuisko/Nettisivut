@@ -111,10 +111,11 @@ session_start();
 
       .btn_big {
         padding: 10px 30px;
-        width: 80%;
+        width: 70%;
         border-radius: 20px;
         margin: 10px auto;
         font-size: 20px;
+        display: block;
       }
 
       a {
@@ -154,7 +155,7 @@ session_start();
           }
 
         .header, nav {
-          width: 100%;
+          width: 50%;
           margin: 0px;
           float: none;
           clear: both;

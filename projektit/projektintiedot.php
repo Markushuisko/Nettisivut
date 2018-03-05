@@ -34,7 +34,7 @@ var_dump($_SESSION);
 <p><?php echo $xml->projektit->projekti[$i]->oppiminen; ?></p>
 
 <label><b>Linkki Projektiin</b></label>
-<p><a class="btn" href=" <?php echo $xml->projektit->projekti[$i]->linkki;?>"> <?php echo $xml->projektit->projekti[$i]->nimi; ?></a></p>
+<p><?php echo $xml->projektit->projekti[$i]->linkki; ?></p>
 
 <a href="./">Takaisin</a>
 
